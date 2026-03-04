@@ -8,25 +8,32 @@
     "dark": "#3730A3"
   },
   "favicon": "/favicon.svg",
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "pages": [
-        "index",
-        "getting-started/what-is-lincal",
-        "getting-started/connecting-linear"
-      ]
-    },
-    {
-      "group": "Using LinCal",
-      "pages": [
-        "using-lincal/calendar-view",
-        "using-lincal/filtering",
-        "using-lincal/drag-and-drop",
-        "using-lincal/creating-issues"
-      ]
-    }
-  ],
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Docs",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "index",
+              "getting-started/what-is-lincal",
+              "getting-started/connecting-linear"
+            ]
+          },
+          {
+            "group": "Using LinCal",
+            "pages": [
+              "using-lincal/calendar-view",
+              "using-lincal/filtering",
+              "using-lincal/drag-and-drop",
+              "using-lincal/creating-issues"
+            ]
+          }
+        ]
+      }
+    ]
+  },
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
