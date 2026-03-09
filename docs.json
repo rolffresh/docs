@@ -27,7 +27,10 @@
               "using-lincal/calendar-view",
               "using-lincal/filtering",
               "using-lincal/drag-and-drop",
-              "using-lincal/creating-issues"
+              "using-lincal/share-calendar-view",
+              "using-lincal/creating-issues",
+              "using-lincal/task-load-visibility",
+              "using-lincal/sync-behavior"
             ]
           }
         ]

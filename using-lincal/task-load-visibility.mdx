@@ -1,0 +1,23 @@
+# Task Loading and Visibility
+
+This page explains how LinCal decides which tasks to load and display, and why some tasks might not appear.
+
+## What gets loaded
+
+### Calendar (tasks with due dates)
+- Tasks are loaded **per calendar month** as you scroll.
+- Only tasks from your **selected teams** (or your teams by default) are fetched.
+- All matching tasks for that month are loaded (no hard limit).
+
+### Tasks without due date (bottom bar)
+- Only tasks **updated in the last 2 months** are loaded.
+- Older tasks without due dates do not appear here.
+
+## Why a task might not show up
+
+1. **Team scope** — By default you only see tasks from teams you’re a member of. Select more teams in the filter to see others.
+2. **Display filters** — Status, project, assignee, cycle, or label filters can hide tasks that match the load criteria.
+3. **Completed / sub-issues** — If “Show completed” or “Show sub-issues” is off, those tasks are hidden.
+4. **Tasks without due date** — Only tasks updated in the last 2 months appear in the bottom bar.
+5. **Per-day limit** — Each day shows up to 4 tasks; the rest are under the “More” button.
+6. **Weekends** — If “Show weekends” is off, weekend days are hidden.

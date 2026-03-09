@@ -1,0 +1,31 @@
+# Sync Behavior
+
+How LinCal stays in sync with Linear and when data is refreshed.
+
+## Actions Sync Instantly
+
+When you make changes in LinCal — creating a task, dragging to reschedule, updating status, assignee, or other properties — those changes are sent to Linear immediately. The UI updates right away (optimistic updates), and Linear is updated in the background. If a change fails, you'll see an error and the affected area will refresh from Linear.
+
+## When Does Data Refresh Automatically?
+
+You usually don't need to press Sync when you're actively using the app:
+
+- **After each action** — Creating a task, editing one, or dragging it to a new date triggers a refresh of the affected area (that month, or the tasks-without-due-date list).
+- **When scrolling back** — If you scroll to a month you haven't viewed in over 5 minutes, that month's data is refreshed when it becomes visible again.
+- **When returning to the tab** — If you've been away for 5 minutes or more, data refreshes automatically when you come back.
+
+**When to use Sync:** Use the Sync button when you've been viewing the calendar without making changes and want to pull in the latest updates from Linear or your teammates.
+
+## What Happens When You Scroll
+
+The calendar loads data **on demand** as you scroll:
+
+- Tasks are fetched **per calendar month**.
+- When you scroll into a new month, that month's tasks are loaded when the first day of that month enters the visible area.
+- Previously loaded months are cached for about 5 minutes, so scrolling back is fast.
+
+This keeps the app responsive while you move through the calendar.
+
+## Manual Sync
+
+Use the Sync button in the display menu to refresh all data at any time. The button is disabled while a sync is in progress.
