@@ -26,6 +26,7 @@
             "pages": [
               "using-lincal/calendar-view",
               "using-lincal/filtering",
+              "using-lincal/views"
               "using-lincal/recentsfavorites",
               "using-lincal/drag-and-drop",
               "using-lincal/share-calendar-view",
