@@ -1,5 +1,6 @@
 ---
 title: "Task Loading and Visibility"
+description: "How LinCal decides which tasks to load and show, and why a task might not appear on your calendar."
 ---
 
 This page explains how LinCal decides which tasks to load and display, and why some tasks might not appear.
@@ -9,19 +10,31 @@ This page explains how LinCal decides which tasks to load and display, and why s
 ### Calendar (tasks with due dates)
 
 - Tasks are loaded **per calendar month** as you scroll.
-- Only tasks from your **selected teams** (or your teams by default) are fetched.
-- All matching tasks for that month are loaded (no hard limit).
+- Which teams are included depends on your filters:
+  - **No filters:** tasks from your own teams.
+  - **One or more teams selected:** tasks from those teams.
+  - **A [Linear view](/using-lincal/views) selected:** tasks from that view, from any team you have access to.
+  - **An assignee, project or label selected, but no team:** matching tasks from any team you have access to.
+- All matching tasks for that month are loaded.
 
-### Tasks without due date (bottom bar)
+### Tasks without a due date (bottom bar)
 
-- Only tasks **updated in the last 2 months** are loaded.
-- Older tasks without due dates do not appear here.
+- LinCal loads up to **100** tasks without a due date, **most recently updated first**.
+- Only tasks **updated in the last 2 months** are included.
+- The same filters apply as for the calendar. If the list reaches 100, the count shows **100+**. Use filters to narrow it down.
+
+#### Searching the bar
+
+- **Search box:** type to filter the tasks that are already loaded.
+- **Search entire workspace:** when the task you want isn't in the loaded list, click this to search task titles beyond it, including tasks not updated in the last 2 months. Results are limited to **100**.
+
+See [Tasks without a due date](/using-lincal/tasks-without-due-date) for more on using the bar.
 
 ## Why a task might not show up
 
-1. **Team scope** — By default you only see tasks from teams you’re a member of. Select more teams in the filter to see others.
-2. **Display filters** — Status, project, assignee, cycle, or label filters can hide tasks that match the load criteria.
-3. **Completed / sub-issues** — If “Show completed” or “Show sub-issues” is off, those tasks are hidden.
-4. **Tasks without due date** — Only tasks updated in the last 2 months appear in the bottom bar.
-5. **Per-day limit** — Each day shows up to 4 tasks; the rest are under the “More” button.
-6. **Weekends** — If “Show weekends” is off, weekend days are hidden.
+1. **Team scope:** with no filters you only see tasks from teams you're a member of. Select more teams in the filter to see others. Selecting an assignee, project, label or view can also bring in tasks from teams you haven't selected.
+2. **Display filters:** status, project, assignee, cycle or label filters can hide tasks that match the load criteria.
+3. **Completed and sub-tasks:** if **Show completed** or **Show sub-tasks** is off, those tasks are hidden. See [Display Options](/using-lincal/display-options).
+4. **Tasks without a due date:** the bar shows at most 100 tasks updated in the last 2 months. For anything older or beyond the 100, use **Search entire workspace**.
+5. **Per-day limit:** each day shows up to 4 tasks, and the rest are under the **More** button.
+6. **Weekends:** if **Show weekends** is off, weekend days are hidden.
