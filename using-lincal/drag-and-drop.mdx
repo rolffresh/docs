@@ -1,35 +1,52 @@
 ---
 title: "Drag and Drop"
-description: "Reschedule issues quickly by dragging and dropping them on the calendar."
+description: "Reschedule, unschedule or delete tasks by dragging them on the calendar."
 ---
 
+Drag any task card to change its due date. This works in month view and week view, and for sub-tasks as well as regular tasks.
 
 ## Move a task to another day
 
 ![Drag and drop screenshot](/images/using-lincal/LinCal-DragDrop.png)
 
-
 1. Click and drag a task card.
-2. Drop it on a different day cell in the calendar.
-3. LinCal updates the due date immediately in Linear.
+2. Drop it on a different day. The day you're hovering over gets a blue outline.
+3. LinCal updates the due date in Linear right away.
 
 ### Notes
 
 - Only the due date changes.
-- Day cells highlight when they are valid drop targets.
+- Dropping a task on the day it's already on does nothing.
+- If **Show weekends** is off, weekend days are hidden and can't be drop targets. See [Display Options](/using-lincal/display-options).
+
+## Schedule a task without a due date
+
+Tasks without a due date sit in the bar at the bottom of the calendar.
+
+1. Expand the bar if you want to browse the tasks.
+2. Drag a task card onto a day in the calendar.
+3. The task gets that day as its due date.
 
 ## Remove a due date
 
-1. Drag a task card to the bottom bar: **Tasks without a due date**.
-2. Drop it there.
-3. The task is updated to have no due date.
+![Drop zones while dragging](/images/using-lincal/LinCal-DragDropZones.png)
 
-### Notes
+1. Start dragging a task card. Two drop zones appear in the bottom bar.
+2. Drop the card on **Drop to remove due date**.
+3. The task now has no due date and moves into the bar.
 
-- Use this when a task should stay unscheduled.
-- You can expand the bottom section to review all unscheduled tasks.
+You don't need to expand the bar first. Use this when a task should stay unscheduled.
+
+## Delete a task
+
+1. Start dragging a task card.
+2. Drop it on the **Delete** zone with the trash icon.
+3. The task is moved to Linear's trash, and a **Task moved to trash** message appears.
+
+Changed your mind? Click **View issue** in the message to open the task in Linear, where you can restore it.
 
 ## Tips
 
-- Use **Today** to quickly return to the current week before dropping.
-- Overdue tasks can be rescheduled quickly with drag and drop.
+- Use **Today** or **T** to jump back to the current week before dropping.
+- Overdue tasks are quick to reschedule: drag them to a new day.
+- Dragging a sub-task changes only that sub-task's due date, not its parent's. To see sub-tasks on the calendar, turn on **Show sub-tasks** in [Display Options](/using-lincal/display-options).
